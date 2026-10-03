@@ -213,6 +213,9 @@ section{scroll-margin-top:20px}
 .quote blockquote::before{content:"\201C";display:block;font-size:3.4rem;line-height:.6;color:var(--copper);margin-bottom:10px}
 .quote footer{display:flex;justify-content:space-between;gap:12px;font-size:.9rem;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:14px;flex-wrap:wrap}
 .quote footer strong{color:var(--ink);font-weight:600}
+.quote.feature{grid-column:1/-1}
+.quote blockquote p{margin:0 0 .8em}
+.quote blockquote p:last-child{margin-bottom:0}
 @media (max-width:800px){.quotes{grid-template-columns:1fr}}
 
 /* Know before */
@@ -324,8 +327,8 @@ section{scroll-margin-top:20px}
     <div class="wrap story">
       <div class="story-copy">
         <span class="eyebrow">Why &ldquo;39 Wishes&rdquo;</span>
-        <h2>Named for the highway, and for the vacation we wish you</h2>
-        <p>This land has been in our family for three generations. My great uncle BJ Sublett and his wife Effie built the main house in 1931, and the room that is now the Guest Kitchenette belonged to their daughter Audrey. We still call it Audrey&rsquo;s Room.</p>
+        <h2>Where Highway 39 meets the river, and your wishes come true</h2>
+        <p>The property sits right off Texas Highway 39 along the Guadalupe. This land has been in our family for three generations. My great uncle BJ Sublett and his wife Effie built the main house in 1931, and the room that is now the Guest Kitchenette belonged to their daughter Audrey. We still call it Audrey&rsquo;s Room.</p>
         <p>We have remodeled both buildings with guests in mind, and it has been our dream to share this corner of the Hill Country with others. We live on the property and are happy to help, or to give you all the quiet you came for. You take the lead.</p>
         <div class="story-sign">
           <img src="img/logo-well.png" alt="">
@@ -351,7 +354,7 @@ section{scroll-margin-top:20px}
           <img src="img/rh-deck-seating.jpg" alt="">
           <div class="choice-body">
             <h3>The River House</h3>
-            <div class="chips"><span class="chip">Up to 8 guests</span><span class="chip">Full kitchen</span><span class="chip">River-view deck</span></div>
+            <div class="chips"><span class="chip">Up to 8 guests</span><span class="chip">3 bed &middot; 2 bath</span><span class="chip">Full kitchen</span><span class="chip">River-view deck</span></div>
             <span class="go">See the house <svg><use href="#i-arrow"/></svg></span>
           </div>
         </a>
@@ -382,16 +385,17 @@ section{scroll-margin-top:20px}
         <button class="big"><img src="img/rh-deck-seating.jpg" alt="Seating area on the covered deck overlooking the Guadalupe River"></button>
         <button><img src="img/rh-living.jpg" alt="Living room with leather sofas and river-facing windows"></button>
         <button><img src="img/rh-kitchen.jpg" alt="Kitchen with stainless appliances opening to the dining room"></button>
-        <button><img src="img/rh-bedroom.jpg" alt="Queen bedroom with bedside lamps"></button>
+        <button><img src="img/rh-bedroom.jpg" alt="King bedroom with bedside lamps"></button>
         <button><img src="img/rh-bathtub.jpg" alt="Bathroom with a freestanding soaking tub and rain shower" style="object-position:50% 80%"></button>
         <button class="wide"><img src="img/rh-porch2.jpg" alt="Covered porch seating against the stone wall"></button>
-        <button><img src="img/rh-bunks.jpg" alt="Loft sleeping nook with twin beds"></button>
+        <button><img src="img/rh-bunks.jpg" alt="Attic bedroom with twin XL beds"></button>
         <button><img src="img/rh-fireplace.jpg" alt="Stone fireplace and TV in the living room"></button>
       </div>
 
       <div class="prop-detail">
         <div class="prop-copy">
-          <p>Inside, you&rsquo;ll find a fully equipped kitchen, a living room with a stone fireplace, comfortable bedrooms and an upstairs loft the kids will claim as their own. Most of the lights can be controlled with Alexa.</p>
+          <p>Inside, you&rsquo;ll find a fully equipped kitchen, a living room with a stone fireplace, three bedrooms and two bathrooms. Most of the lights can be controlled with Alexa.</p>
+          <p>Two bedrooms each have a king bed, and the attic sleeps four on twin XL beds with its own living area &mdash; a space the kids will claim as their own.</p>
           <p>Outside is where the days go: coffee on the covered porch, lunch on the deck, a paddle upriver in the afternoon and the firepit once the sun drops behind the cypress trees.</p>
           <div class="amen">
             <div>
@@ -408,6 +412,8 @@ section{scroll-margin-top:20px}
           <h3>Book The River House</h3>
           <dl>
             <dt>Guests</dt><dd>Up to 8</dd>
+            <dt>Bedrooms</dt><dd>3: two with king beds, plus an attic with 4 twin XL beds &amp; a living area</dd>
+            <dt>Bathrooms</dt><dd>2</dd>
             <dt>Check-in</dt><dd>3:00 PM, self check-in keypad</dd>
             <dt>Check-out</dt><dd>11:00 AM</dd>
             <dt>Parking</dt><dd>Free, covered</dd>
@@ -434,7 +440,7 @@ section{scroll-margin-top:20px}
       </div>
 
       <div class="gallery" data-gallery="Guest Kitchenette">
-        <button class="big"><img src="img/gk-room.jpg" alt="Guest Kitchenette bedroom with bed and kitchenette"></button>
+        <button class="big"><img src="img/gk-room.jpg" alt="Guest Kitchenette bedroom with king bed and kitchenette"></button>
         <button><img src="img/gk-kitchenette.jpg" alt="Kitchenette with butcher-block counter, sink, microwave and small refrigerator"></button>
         <button><img src="img/gk-bed.jpg" alt="Bed with 'Be our guest' pillow"></button>
         <button><img src="img/gk-window.jpg" alt="Seating area with a window view of the river"></button>
@@ -446,7 +452,7 @@ section{scroll-margin-top:20px}
 
       <div class="prop-detail">
         <div class="prop-copy">
-          <p>The room has a comfortable bed, a kitchenette with a Keurig and small fridge, a walk-in tiled shower and a mini-split air conditioner that keeps things cool through a Texas summer. Tell Alexa to turn the lights off when you head out to the patio.</p>
+          <p>The room has a comfortable king sized bed, a kitchenette with a Keurig and small fridge, a walk-in tiled shower and a mini-split air conditioner that keeps things cool through a Texas summer. Tell Alexa to turn the lights off when you head out to the patio.</p>
           <p>It&rsquo;s a good fit for couples, solo travelers and anyone passing through Kerrville who wants the river without the bustle.</p>
           <div class="amen">
             <div>
@@ -533,6 +539,10 @@ section{scroll-margin-top:20px}
         <h2>What guests say</h2>
       </div>
       <div class="quotes">
+        <figure class="quote feature">
+          <blockquote><p>Our stay at 39 Wishes was absolutely wonderful.</p><p>Ingram holds a special place in my heart after the time I spent there during the flood response, so coming back was emotional in a way I did not fully expect. Having such a peaceful, comfortable place to stay made the trip feel even more meaningful.</p><p>The property was clean, quiet, welcoming, and felt like a little home away from home. It was the perfect place to slow down, breathe, and enjoy being back in an area that means so much to me.</p><p>There was something special about this stay, and 39 Wishes became part of those memories for us.</p><p>We are so grateful for the experience and would absolutely stay here again. Five stars without hesitation.</p><p>Thank you Again to the amazing host. Look forward to seeing y&rsquo;all again.</p></blockquote>
+          <footer><strong>Melissa</strong><span>The River House &middot; September 2026</span></footer>
+        </figure>
         <figure class="quote">
           <blockquote>Shannon was a wonderful host! Our previous reservation with another host had been canceled due to overbooking. We were left scrambling at the last minute, and we landed in the perfect spot. Comfortable beds, fluffy towels, great deck! Our boys loved fishing in the river.</blockquote>
           <footer><strong>Ann</strong><span>The River House &middot; March 2026</span></footer>
