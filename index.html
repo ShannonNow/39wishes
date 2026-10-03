@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>39 Wishes Vacation Rentals</title>
+<meta name="description" content="Two vacation rentals on 420 feet of Guadalupe River frontage in Ingram, Texas: The River House and the Guest Kitchenette.">
+<link rel="icon" href="img/icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Figtree:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --river:#15313D;      /* deep Guadalupe blue */
+  --river-2:#1E4452;
+  --spring:#5F9C98;     /* spring-fed green-teal */
+  --copper:#B7804B;     /* wishing-well bronze */
+  --gold:#E2B679;
+  --limestone:#F2ECE1;  /* Hill Country limestone */
+  --limestone-2:#E7DECF;
+  --ink:#1D2A2F;
+  --ink-soft:#4B5A5F;
+  --cream:#F7F1E6;
+  --line:rgba(29,42,47,.14);
+  --display:"Marcellus", "Palatino Linotype", Palatino, Georgia, serif;
+  --body:"Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --gutter:clamp(16px,4vw,48px);
+  --maxw:1240px;
+  --r:18px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--limestone);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.12;text-wrap:balance;margin:0}
+p{margin:0}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+.eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--copper)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;font:600 .98rem/1 var(--body);text-decoration:none;border-radius:999px;padding:1em 1.6em;border:1px solid transparent;cursor:pointer;transition:transform .2s ease, background .2s ease, box-shadow .2s ease}
+.btn svg{width:1.05em;height:1.05em;flex:none}
+.btn-copper{background:linear-gradient(180deg,#C48C55,#A7703F);color:#fff;box-shadow:0 8px 24px -10px rgba(167,112,63,.8), inset 0 1px 0 rgba(255,255,255,.25)}
+.btn-copper:hover{transform:translateY(-2px)}
+.btn-ghost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.28);backdrop-filter:blur(6px)}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+.btn-outline{background:transparent;color:var(--river);border-color:rgba(21,49,61,.3)}
+.btn-outline:hover{background:var(--river);color:#fff}
+
+/* Header */
+.site-head{position:absolute;inset:0 0 auto 0;z-index:20;padding-top:env(safe-area-inset-top,0px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:22px}
+.brand img{height:54px;width:auto}
+.nav-links{display:flex;gap:28px;align-items:center;list-style:none;margin:0;padding:0}
+.nav-links a{color:rgba(255,255,255,.88);text-decoration:none;font-weight:500;font-size:.95rem}
+.nav-links a:hover{color:#fff}
+.nav-links .btn{padding:.75em 1.3em;font-size:.9rem}
+.menu-btn{display:none;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:12px;width:46px;height:46px;cursor:pointer}
+.menu-btn svg{width:22px;height:22px;margin:auto}
+@media (max-width:900px){
+  .menu-btn{display:grid;place-items:center}
+  .nav-links{position:absolute;top:calc(100% - 6px);right:var(--gutter);left:var(--gutter);flex-direction:column;align-items:stretch;gap:4px;padding:12px;border-radius:16px;background:rgba(21,49,61,.94);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.14)}
+  .nav-links:not(.open){display:none}
+  .nav-links a{padding:12px 14px;border-radius:10px}
+  .nav-links a:hover{background:rgba(255,255,255,.08)}
+  .brand img{height:44px}
+}
+
+/* Hero */
+.hero{position:relative;background:var(--river);color:#fff;overflow:hidden;min-height:clamp(640px,92vh,900px);display:flex;align-items:flex-end}
+.hero-bg{position:absolute;inset:0;background:url("img/hero-firepit.jpg") center 60%/cover no-repeat}
+.hero-bg::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(90deg,rgba(13,31,39,.72) 0%,rgba(13,31,39,.25) 45%,rgba(13,31,39,0) 70%),
+  linear-gradient(180deg,rgba(13,31,39,.55) 0%,rgba(13,31,39,0) 22%,rgba(13,31,39,0) 60%,rgba(13,31,39,.85) 100%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding-block:150px 110px}
+.glass{max-width:520px;padding:clamp(26px,3.4vw,40px);border-radius:26px;background:linear-gradient(145deg,rgba(40,62,72,.62),rgba(30,48,56,.38) 55%,rgba(120,84,52,.35));border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(18px) saturate(1.2);-webkit-backdrop-filter:blur(18px) saturate(1.2);box-shadow:0 30px 60px -30px rgba(0,0,0,.6);display:grid;gap:22px}
+.glass h1{font-size:clamp(2.1rem,4.4vw,3.3rem)}
+.glass .lede{color:rgba(255,255,255,.84);font-size:1.05rem}
+.glass .eyebrow{color:var(--gold)}
+.glass-row{display:grid;grid-template-columns:1fr auto;gap:16px 20px;align-items:center;padding-top:18px;border-top:1px solid rgba(255,255,255,.14)}
+.glass-row .lbl{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:4px}
+.glass-row address{font-style:normal;line-height:1.5}
+.glass-row .btn{padding:.8em 1.2em;font-size:.88rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero-ctas .btn{flex:1 1 200px;white-space:nowrap}
+.hero-water{position:absolute;left:0;right:0;bottom:-0.18em;z-index:1;font-family:var(--display);font-size:clamp(4rem,15vw,15rem);line-height:1;white-space:nowrap;text-align:center;color:rgba(255,255,255,.09);pointer-events:none;letter-spacing:.02em}
+@media (max-width:560px){.glass-row{grid-template-columns:1fr}.hero-inner{padding-block:120px 70px}}
+
+/* Facts strip */
+.facts{background:var(--river);color:var(--cream)}
+.facts ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.facts li{padding:28px 20px;border-left:1px solid rgba(255,255,255,.12);display:grid;gap:2px}
+.facts li:first-child{border-left:0;padding-left:0}
+.facts b{font-family:var(--display);font-weight:400;font-size:clamp(1.6rem,2.6vw,2.2rem);color:var(--gold);font-variant-numeric:tabular-nums}
+.facts span{font-size:.9rem;color:rgba(247,241,230,.75)}
+@media (max-width:800px){.facts ul{grid-template-columns:1fr 1fr}.facts li:nth-child(3){border-left:0;padding-left:0}.facts li{border-top:1px solid rgba(255,255,255,.12)}.facts li:nth-child(-n+2){border-top:0}}
+
+/* Sections */
+section{scroll-margin-top:20px}
+.sec{padding-block:clamp(72px,9vw,120px)}
+.sec-head{display:grid;gap:14px;max-width:720px;margin-bottom:clamp(36px,5vw,56px)}
+.sec-head h2{font-size:clamp(2rem,4vw,3rem);color:var(--river)}
+.sec-head p{color:var(--ink-soft);font-size:1.08rem}
+
+/* Story */
+.story{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,6vw,80px);align-items:center}
+.story-copy{display:grid;gap:18px}
+.story-copy h2{font-size:clamp(2rem,4vw,3rem);color:var(--river)}
+.story-copy p{color:var(--ink-soft);max-width:60ch}
+.story-sign{display:flex;align-items:center;gap:16px;padding-top:8px}
+.story-sign img{width:64px}
+.story-sign div{font-size:.95rem;color:var(--ink-soft)}
+.story-sign strong{display:block;color:var(--ink);font-weight:600}
+.story-photo{position:relative}
+.story-photo img{border-radius:var(--r);aspect-ratio:4/5;object-fit:cover;width:100%}
+.story-photo .stamp{position:absolute;left:-22px;bottom:28px;background:var(--cream);border-radius:14px;padding:14px 18px;box-shadow:0 18px 40px -20px rgba(21,49,61,.5);display:grid;gap:0;text-align:center}
+.stamp b{font-family:var(--display);font-weight:400;font-size:2rem;color:var(--copper);line-height:1}
+.stamp span{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+@media (max-width:860px){.story{grid-template-columns:1fr}.story-photo .stamp{left:14px}}
+
+/* Stays chooser */
+.stays{background:var(--limestone-2)}
+.chooser{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.choice{position:relative;border-radius:22px;overflow:hidden;min-height:460px;display:flex;align-items:flex-end;color:#fff;text-decoration:none;isolation:isolate}
+.choice img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .8s ease}
+.choice::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(13,31,39,0) 30%,rgba(13,31,39,.85))}
+.choice:hover img{transform:scale(1.04)}
+.choice-body{padding:28px;display:grid;gap:10px;width:100%}
+.choice h3{font-size:clamp(1.7rem,3vw,2.3rem)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:.8rem;font-weight:500;padding:.35em .8em;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(6px)}
+.choice .go{display:inline-flex;align-items:center;gap:.5em;font-weight:600;color:var(--gold)}
+.choice .go svg{width:1em;height:1em;transition:transform .2s}
+.choice:hover .go svg{transform:translateX(4px)}
+@media (max-width:760px){.chooser{grid-template-columns:1fr}.choice{min-height:380px}}
+
+/* Property */
+.prop-head{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(24px,5vw,64px);align-items:end;margin-bottom:40px}
+.prop-head h2{font-size:clamp(2.3rem,5vw,3.8rem);color:var(--river)}
+.prop-head .eyebrow{margin-bottom:12px;display:block}
+.prop-head p{color:var(--ink-soft)}
+@media (max-width:860px){.prop-head{grid-template-columns:1fr}}
+
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:clamp(150px,17vw,230px);gap:12px}
+.gallery button{padding:0;border:0;border-radius:14px;overflow:hidden;cursor:zoom-in;background:var(--limestone-2)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.gallery button:hover img{transform:scale(1.05)}
+.gallery .big{grid-column:span 2;grid-row:span 2}
+.gallery .wide{grid-column:span 2}
+@media (max-width:760px){.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.gallery .big{grid-column:span 2;grid-row:span 2}}
+
+.prop-detail{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,64px);margin-top:48px}
+.prop-copy{display:grid;gap:16px;align-content:start}
+.prop-copy p{color:var(--ink-soft);max-width:62ch}
+.amen{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:10px}
+.amen h3{font-family:var(--body);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--copper);margin-bottom:10px}
+.amen ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.amen li{display:flex;gap:10px;align-items:baseline;font-size:.98rem}
+.amen li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--spring);flex:none;transform:translateY(-2px)}
+@media (max-width:520px){.amen{grid-template-columns:1fr}}
+
+.book-card{background:var(--river);color:var(--cream);border-radius:22px;padding:clamp(24px,3vw,34px);display:grid;gap:18px;align-self:start;position:relative;overflow:hidden}
+.book-card::after{content:"";position:absolute;right:-40px;top:-40px;width:180px;height:190px;background:url("img/logo-well-light.png") center/contain no-repeat;opacity:.1}
+.book-card h3{font-size:1.7rem}
+.book-card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 18px;font-size:.96rem}
+.book-card dt{color:rgba(247,241,230,.62)}
+.book-card dd{margin:0;font-weight:500}
+.book-links{display:grid;gap:10px}
+.book-links .btn{justify-content:space-between;width:100%}
+.book-links .btn-ghost{color:var(--cream)}
+@media (max-width:860px){.prop-detail{grid-template-columns:1fr}}
+
+.kitchenette{background:var(--cream)}
+
+/* River life */
+.river{background:var(--river);color:var(--cream);position:relative;overflow:hidden}
+.river .sec-head h2{color:#fff}
+.river .sec-head p{color:rgba(247,241,230,.78)}
+.river-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(28px,4vw,48px);align-items:stretch}
+.river-photo{border-radius:22px;overflow:hidden;min-height:420px}
+.river-photo img{width:100%;height:100%;object-fit:cover}
+.activities{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.12);border-radius:22px;overflow:hidden;border:1px solid rgba(255,255,255,.12)}
+.act{background:var(--river-2);padding:24px;display:grid;gap:8px;align-content:start}
+.act svg{width:30px;height:30px;color:var(--gold)}
+.act h3{font-size:1.3rem;color:#fff}
+.act p{font-size:.93rem;color:rgba(247,241,230,.76)}
+@media (max-width:900px){.river-grid{grid-template-columns:1fr}.river-photo{min-height:280px}}
+@media (max-width:480px){.activities{grid-template-columns:1fr}}
+
+/* Nearby */
+.nearby-cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px)}
+.nearby-cols h3{font-size:1.6rem;color:var(--river);padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:6px;display:flex;justify-content:space-between;align-items:baseline}
+.nearby-cols h3 small{font-family:var(--body);font-size:.8rem;color:var(--ink-soft);letter-spacing:.04em}
+.place{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding-block:18px;border-bottom:1px solid var(--line);text-decoration:none;align-items:center}
+.place strong{font-weight:600;font-size:1.05rem;color:var(--ink)}
+.place span{grid-column:1;color:var(--ink-soft);font-size:.94rem}
+.place em{grid-column:1;font-style:normal;font-size:.82rem;color:var(--copper);font-weight:500}
+.place svg{grid-row:1/span 3;grid-column:2;width:20px;height:20px;color:var(--ink-soft);transition:transform .2s,color .2s}
+.place:hover svg{transform:translate(3px,-3px);color:var(--copper)}
+.place:hover strong{color:var(--river)}
+@media (max-width:800px){.nearby-cols{grid-template-columns:1fr}}
+
+/* Reviews */
+.reviews{background:var(--limestone-2)}
+.quotes{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.quote{background:var(--cream);border-radius:22px;padding:clamp(26px,3.5vw,40px);display:grid;gap:18px;align-content:space-between}
+.quote blockquote{margin:0;font-family:var(--display);font-size:clamp(1.15rem,1.8vw,1.4rem);line-height:1.5;color:var(--ink)}
+.quote blockquote::before{content:"\201C";display:block;font-size:3.4rem;line-height:.6;color:var(--copper);margin-bottom:10px}
+.quote footer{display:flex;justify-content:space-between;gap:12px;font-size:.9rem;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:14px;flex-wrap:wrap}
+.quote footer strong{color:var(--ink);font-weight:600}
+@media (max-width:800px){.quotes{grid-template-columns:1fr}}
+
+/* Know before */
+.know{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.know div{padding:26px 24px 26px 0;border-bottom:1px solid var(--line);display:grid;gap:6px}
+.know h3{font-family:var(--body);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--copper);font-weight:600}
+.know p{color:var(--ink-soft);font-size:.96rem}
+.know b{font-family:var(--display);font-weight:400;font-size:1.6rem;color:var(--river)}
+@media (max-width:800px){.know{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.know{grid-template-columns:1fr}}
+
+/* Footer */
+.foot{position:relative;overflow:hidden;color:var(--cream);background:var(--river)}
+.foot-bg{position:absolute;inset:0;background:url("img/rh-sunrise.jpg") center/cover}
+.foot-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,31,39,.55),rgba(13,31,39,.92))}
+.foot-inner{position:relative;z-index:2;padding-block:clamp(80px,10vw,130px) 36px;display:grid;gap:70px}
+.foot-top{display:grid;grid-template-columns:auto 1fr;gap:clamp(28px,6vw,80px);align-items:center}
+.foot .glass{max-width:500px}
+.foot-cta{display:grid;gap:18px;max-width:520px}
+.foot-cta h2{font-size:clamp(2.2rem,5vw,3.6rem);color:#fff}
+.foot-cta p{color:rgba(247,241,230,.8)}
+.copy-line{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.copy-line a{text-decoration:none}
+.copy-btn{background:transparent;border:1px solid rgba(255,255,255,.25);color:rgba(255,255,255,.8);font:500 .72rem/1 var(--body);letter-spacing:.08em;text-transform:uppercase;padding:.45em .7em;border-radius:999px;cursor:pointer}
+.copy-btn:hover{background:rgba(255,255,255,.1)}
+.foot-bar{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;font-size:.9rem;color:rgba(247,241,230,.7);border-top:1px solid rgba(255,255,255,.14);padding-top:24px}
+.foot-bar nav{display:flex;gap:22px;flex-wrap:wrap}
+.foot-bar a{text-decoration:none}
+.foot-bar a:hover{color:#fff}
+.foot-word{position:absolute;left:0;right:0;bottom:-.2em;text-align:center;font-family:var(--display);font-size:clamp(4rem,17vw,17rem);line-height:1;color:rgba(255,255,255,.06);white-space:nowrap;pointer-events:none;z-index:1}
+@media (max-width:900px){.foot-top{grid-template-columns:1fr}}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(10,22,28,.94);display:grid;place-items:center;padding:calc(env(safe-area-inset-top,0px) + 56px) 16px calc(env(safe-area-inset-bottom,0px) + 56px)}
+.lb img{max-height:100%;max-width:min(1200px,100%);border-radius:10px;object-fit:contain}
+.lb button{position:absolute;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:999px;width:48px;height:48px;cursor:pointer;display:grid;place-items:center}
+.lb button svg{width:22px;height:22px}
+.lb .x{top:calc(env(safe-area-inset-top,0px) + 12px);right:16px}
+.lb .prev{left:16px;top:50%;transform:translateY(-50%)}
+.lb .next{right:16px;top:50%;transform:translateY(-50%)}
+.lb .cap{position:absolute;bottom:calc(env(safe-area-inset-bottom,0px) + 16px);left:0;right:0;text-align:center;color:rgba(255,255,255,.75);font-size:.9rem}
+.lbl-head{font-family:var(--display);font-size:1.5rem;color:#fff}
+.glass-note{color:rgba(247,241,230,.8);font-size:.96rem}
+.msg-row{display:grid;gap:10px;padding-top:16px;border-top:1px solid rgba(255,255,255,.14)}
+.msg-row .lbl{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.msg-links{display:flex;flex-wrap:wrap;gap:10px}
+.msg-links .btn{padding:.75em 1.2em;font-size:.88rem;flex:1 1 140px;justify-content:space-between}
+</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></symbol>
+  <symbol id="i-kayak" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20c4 3 22 3 26 0-4-2-22-2-26 0z"/><path d="M8 7l16 18"/><path d="M6 5l3 3M22 24l3 3"/><circle cx="16" cy="12" r="2"/></symbol>
+  <symbol id="i-swim" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22c3 0 3-2 6.5-2S13 22 16 22s3-2 6.5-2 3.5 2 6.5 2"/><path d="M3 27c3 0 3-2 6.5-2S13 27 16 27s3-2 6.5-2 3.5 2 6.5 2"/><circle cx="22" cy="9" r="2.5"/><path d="M8 17l5-6 4 3 3 3"/></symbol>
+  <symbol id="i-fish" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16c4-6 13-7 18 0-5 7-14 6-18 0z"/><path d="M22 16l6-5v10z"/><circle cx="10" cy="14.5" r="1" fill="currentColor"/></symbol>
+  <symbol id="i-fire" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4c1 5 7 7 7 13a7 7 0 01-14 0c0-3 2-5 3-6 0 3 2 4 3 4 0-4-1-7 1-11z"/><path d="M6 28h20M9 25l14 3M23 25L9 28"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></symbol>
+</svg>
+
+<header class="site-head">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="39 Wishes home"><img src="img/logo-on-dark.png" alt="39 Wishes"></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu"><svg><use href="#i-menu"/></svg></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#river-house">The River House</a></li>
+      <li><a href="#kitchenette">Guest Kitchenette</a></li>
+      <li><a href="#river">On the River</a></li>
+      <li><a href="#nearby">Nearby</a></li>
+      <li><a class="btn btn-copper" href="#stays">Book your stay</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-label="Welcome">
+    <div class="hero-bg" role="img" aria-label="Firepit and Adirondack chairs beside the Guadalupe River at sunset"></div>
+    <div class="hero-water" aria-hidden="true">Guadalupe River</div>
+    <div class="wrap hero-inner">
+      <div class="glass">
+        <span class="eyebrow">Ingram, Texas &middot; Hill Country</span>
+        <h1>Two stays on the Guadalupe River</h1>
+        <p class="lede">A family property since 1931, with 420 feet of riverfront, kayaks at the dock and a firepit for long evenings under the stars.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-copper" href="#river-house">The River House <svg><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ghost" href="#kitchenette">Guest Kitchenette <svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="facts">
+    <div class="wrap">
+      <ul>
+        <li><b>1931</b><span>Main house built by BJ &amp; Effie Sublett</span></li>
+        <li><b>420 ft</b><span>of private Guadalupe riverfront</span></li>
+        <li><b>2 acres</b><span>under the live oaks on Hwy 39</span></li>
+        <li><b>~10 ft</b><span>deep, spring-fed swimming off the dock</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="sec" id="story">
+    <div class="wrap story">
+      <div class="story-copy">
+        <span class="eyebrow">Why &ldquo;39 Wishes&rdquo;</span>
+        <h2>Named for the highway, and for the vacation we wish you</h2>
+        <p>This land has been in our family for three generations. My great uncle BJ Sublett and his wife Effie built the main house in 1931, and the room that is now the Guest Kitchenette belonged to their daughter Audrey. We still call it Audrey&rsquo;s Room.</p>
+        <p>We have remodeled both buildings with guests in mind, and it has been our dream to share this corner of the Hill Country with others. We live on the property and are happy to help, or to give you all the quiet you came for. You take the lead.</p>
+        <div class="story-sign">
+          <img src="img/logo-well.png" alt="">
+          <div><strong>Shannon, John &amp; Dillon Donaghey</strong>Your hosts at 39 Wishes, est. 2019</div>
+        </div>
+      </div>
+      <div class="story-photo">
+        <img src="img/rh-porch.jpg" alt="Covered stone porch at The River House with blue patio seating and a view of the river">
+        <div class="stamp"><b>Est. 2019</b><span>Ingram, TX</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec stays" id="stays">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Choose your stay</span>
+        <h2>Room for the whole family, or a quiet room for two</h2>
+        <p>Both rentals share the same riverfront, dock, kayaks and firepit. Pick the one that fits your trip, then book on Airbnb or Booking.com.</p>
+      </div>
+      <div class="chooser">
+        <a class="choice" href="#river-house">
+          <img src="img/rh-deck-seating.jpg" alt="">
+          <div class="choice-body">
+            <h3>The River House</h3>
+            <div class="chips"><span class="chip">Up to 8 guests</span><span class="chip">Full kitchen</span><span class="chip">River-view deck</span></div>
+            <span class="go">See the house <svg><use href="#i-arrow"/></svg></span>
+          </div>
+        </a>
+        <a class="choice" href="#kitchenette">
+          <img src="img/gk-patio-view.jpg" alt="">
+          <div class="choice-body">
+            <h3>Guest Kitchenette</h3>
+            <div class="chips"><span class="chip">2 guests</span><span class="chip">Private entrance</span><span class="chip">Patio on the river</span></div>
+            <span class="go">See the room <svg><use href="#i-arrow"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE RIVER HOUSE -->
+  <section class="sec" id="river-house">
+    <div class="wrap">
+      <div class="prop-head">
+        <div>
+          <span class="eyebrow">Stay 01 &middot; Whole house</span>
+          <h2>The River House</h2>
+        </div>
+        <p>A stone-and-wood Hill Country home with a covered porch, an open deck over the water and space for up to eight. Bring the family, fire up the grill and let the kids fish off the dock.</p>
+      </div>
+
+      <div class="gallery" data-gallery="The River House">
+        <button class="big"><img src="img/rh-deck-seating.jpg" alt="Seating area on the covered deck overlooking the Guadalupe River"></button>
+        <button><img src="img/rh-living.jpg" alt="Living room with leather sofas and river-facing windows"></button>
+        <button><img src="img/rh-kitchen.jpg" alt="Kitchen with stainless appliances opening to the dining room"></button>
+        <button><img src="img/rh-bedroom.jpg" alt="Queen bedroom with bedside lamps"></button>
+        <button><img src="img/rh-bathtub.jpg" alt="Bathroom with a freestanding soaking tub and rain shower" style="object-position:50% 80%"></button>
+        <button class="wide"><img src="img/rh-porch2.jpg" alt="Covered porch seating against the stone wall"></button>
+        <button><img src="img/rh-bunks.jpg" alt="Loft sleeping nook with twin beds"></button>
+        <button><img src="img/rh-fireplace.jpg" alt="Stone fireplace and TV in the living room"></button>
+      </div>
+
+      <div class="prop-detail">
+        <div class="prop-copy">
+          <p>Inside, you&rsquo;ll find a fully equipped kitchen, a living room with a stone fireplace, comfortable bedrooms and an upstairs loft the kids will claim as their own. Most of the lights can be controlled with Alexa.</p>
+          <p>Outside is where the days go: coffee on the covered porch, lunch on the deck, a paddle upriver in the afternoon and the firepit once the sun drops behind the cypress trees.</p>
+          <div class="amen">
+            <div>
+              <h3>Inside</h3>
+              <ul><li>Air conditioning &amp; WiFi</li><li>Full kitchen: stove, oven, refrigerator</li><li>Microwave, toaster, blender</li><li>Keurig coffee maker</li><li>TV</li><li>Towels, hair dryer, shampoo &amp; body wash</li></ul>
+            </div>
+            <div>
+              <h3>Outside</h3>
+              <ul><li>Private deck</li><li>Shared river access &amp; dock</li><li>Kayaks &amp; stand-up paddle board</li><li>Life jackets in the bin near the fishing poles</li><li>Fishing poles ready to grab</li><li>Gas grill</li><li>Free covered parking</li></ul>
+            </div>
+          </div>
+        </div>
+        <aside class="book-card" aria-label="Book The River House">
+          <h3>Book The River House</h3>
+          <dl>
+            <dt>Guests</dt><dd>Up to 8</dd>
+            <dt>Check-in</dt><dd>3:00 PM, self check-in keypad</dd>
+            <dt>Check-out</dt><dd>11:00 AM</dd>
+            <dt>Parking</dt><dd>Free, covered</dd>
+            <dt>Pets</dt><dd>Not allowed</dd>
+          </dl>
+          <div class="book-links">
+            <a class="btn btn-copper" href="https://airbnb.com/h/39wishes-theriverhouse" target="_blank" rel="noopener">Book on Airbnb <svg><use href="#i-out"/></svg></a>
+            <a class="btn btn-ghost" href="https://www.booking.com/hotel/us/39-wishes-on-the-guadalupe-river.html" target="_blank" rel="noopener">Book on Booking.com <svg><use href="#i-out"/></svg></a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUEST KITCHENETTE -->
+  <section class="sec kitchenette" id="kitchenette">
+    <div class="wrap">
+      <div class="prop-head">
+        <div>
+          <span class="eyebrow">Stay 02 &middot; Private room for two</span>
+          <h2>Guest Kitchenette</h2>
+        </div>
+        <p>Audrey&rsquo;s old room, rebuilt as a bright, private suite for two. It sits completely separate from the main house, with its own patio looking out over the river.</p>
+      </div>
+
+      <div class="gallery" data-gallery="Guest Kitchenette">
+        <button class="big"><img src="img/gk-room.jpg" alt="Guest Kitchenette bedroom with bed and kitchenette"></button>
+        <button><img src="img/gk-kitchenette.jpg" alt="Kitchenette with butcher-block counter, sink, microwave and small refrigerator"></button>
+        <button><img src="img/gk-bed.jpg" alt="Bed with 'Be our guest' pillow"></button>
+        <button><img src="img/gk-window.jpg" alt="Seating area with a window view of the river"></button>
+        <button><img src="img/gk-shower.jpg" alt="Tiled walk-in shower with bench"></button>
+        <button class="wide"><img src="img/gk-patio-view.jpg" alt="Covered patio with table and chairs overlooking the river"></button>
+        <button><img src="img/gk-entry.jpg" alt="Stone exterior and French doors of the Guest Kitchenette"></button>
+        <button><img src="img/gk-patio.jpg" alt="Patio seating along the stone wall"></button>
+      </div>
+
+      <div class="prop-detail">
+        <div class="prop-copy">
+          <p>The room has a comfortable bed, a kitchenette with a Keurig and small fridge, a walk-in tiled shower and a mini-split air conditioner that keeps things cool through a Texas summer. Tell Alexa to turn the lights off when you head out to the patio.</p>
+          <p>It&rsquo;s a good fit for couples, solo travelers and anyone passing through Kerrville who wants the river without the bustle.</p>
+          <div class="amen">
+            <div>
+              <h3>Inside</h3>
+              <ul><li>Air conditioning &amp; WiFi</li><li>TV</li><li>Small refrigerator &amp; microwave</li><li>Keurig, toaster &amp; blender</li><li>Towels &amp; hair dryer</li><li>Shampoo, conditioner &amp; body wash</li></ul>
+            </div>
+            <div>
+              <h3>Outside</h3>
+              <ul><li>Private patio</li><li>Shared river access &amp; dock</li><li>Kayaks</li><li>Fishing poles ready to grab</li><li>Free covered parking</li></ul>
+            </div>
+          </div>
+        </div>
+        <aside class="book-card" aria-label="Book the Guest Kitchenette">
+          <h3>Book the Guest Kitchenette</h3>
+          <dl>
+            <dt>Guests</dt><dd>2</dd>
+            <dt>Check-in</dt><dd>3:00 PM, self check-in keypad</dd>
+            <dt>Check-out</dt><dd>11:00 AM</dd>
+            <dt>Parking</dt><dd>Free, covered</dd>
+            <dt>Pets</dt><dd>Not allowed</dd>
+          </dl>
+          <div class="book-links">
+            <a class="btn btn-copper" href="https://airbnb.com/h/39wishes-guest-kitchenette" target="_blank" rel="noopener">Book on Airbnb <svg><use href="#i-out"/></svg></a>
+            <a class="btn btn-ghost" href="https://www.booking.com/hotel/us/39-wishes-guest-kitchenette-on-the-guadalupe-river.html" target="_blank" rel="noopener">Book on Booking.com <svg><use href="#i-out"/></svg></a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- RIVER LIFE -->
+  <section class="sec river" id="river">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">On the property</span>
+        <h2>Life on the Guadalupe</h2>
+        <p>The river is right out the back door. Everything below is included with your stay.</p>
+      </div>
+      <div class="river-grid">
+        <div class="river-photo"><img src="img/todo-kayak.jpg" alt="Kayaker on the calm, green Guadalupe River lined with cypress trees"></div>
+        <div class="activities">
+          <div class="act"><svg><use href="#i-kayak"/></svg><h3>Kayaks &amp; paddle board</h3><p>Grab a kayak or the stand-up paddle board. Life jackets are in the bin near the fishing poles.</p></div>
+          <div class="act"><svg><use href="#i-swim"/></svg><h3>Swimming</h3><p>About 10 feet deep off the dock. Warm water, with cold spots from the springs that feed the river.</p></div>
+          <div class="act"><svg><use href="#i-fish"/></svg><h3>Fishing</h3><p>Perch and catfish near the dock. Rods, tackle, buckets and camp chairs available. Ages 17+ need a Texas fishing license.</p></div>
+          <div class="act"><svg><use href="#i-fire"/></svg><h3>Firepit evenings</h3><p>Adirondack chairs, string lights and a stone firepit by the water. Stay out for the sunset and the stars.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEARBY -->
+  <section class="sec" id="nearby">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Around Ingram &amp; Kerrville</span>
+        <h2>Things to do nearby</h2>
+        <p>Our favorite stops along Highway 39 and into Kerrville, a short drive from the house.</p>
+      </div>
+      <div class="nearby-cols">
+        <div>
+          <h3>See &amp; do <small>Attractions</small></h3>
+          <a class="place" href="http://www.hcaf.com/" target="_blank" rel="noopener"><strong>Stonehenge II</strong><span>A local replica of Stonehenge, sharing the grounds with Easter Island&ndash;style statues.</span><em>Hill Country Arts Foundation, Ingram</em><svg><use href="#i-out"/></svg></a>
+          <a class="place" href="http://museumofwesternart.com/" target="_blank" rel="noopener"><strong>Museum of Western Art</strong><span>Living artists working in the tradition of Remington and Russell, celebrating the Old West.</span><em>Kerrville</em><svg><use href="#i-out"/></svg></a>
+          <a class="place" href="http://www.thecomingkingfoundation.org" target="_blank" rel="noopener"><strong>&ldquo;The Coming King&rdquo; Sculpture Prayer Garden</strong><span>A hilltop garden with a landmark cross overlooking the valley.</span><em>Kerrville</em><svg><use href="#i-out"/></svg></a>
+          <a class="place" href="https://www.kerrvilletexascvb.com/" target="_blank" rel="noopener"><strong>Kerrville Convention &amp; Visitors Bureau</strong><span>Events, trails, wineries and more across Kerr County.</span><em>Plan more of your trip</em><svg><use href="#i-out"/></svg></a>
+        </div>
+        <div>
+          <h3>Eat &amp; drink <small>Restaurants</small></h3>
+          <a class="place" href="https://www.facebook.com/p/Copper-Pot-100057367193595/" target="_blank" rel="noopener"><strong>Copper Pot</strong><span>Good quality food, not fast food.</span><em>109 Hwy 39, Ingram</em><svg><use href="#i-out"/></svg></a>
+          <a class="place" href="https://texas323bakery.square.site" target="_blank" rel="noopener"><strong>323 Bakery</strong><span>Scratch bakery with local goodies, handmade pottery and seasonal plants.</span><em>323 TX-39, Ingram</em><svg><use href="#i-out"/></svg></a>
+          <a class="place" href="https://www.hillcountrycookin.com" target="_blank" rel="noopener"><strong>The Lakehouse</strong><span>A beloved family restaurant where good food meets great views.</span><em>1655 Junction Hwy, Kerrville</em><svg><use href="#i-out"/></svg></a>
+          <a class="place" href="https://rvbbeverage.com/lj-vineyards" target="_blank" rel="noopener"><strong>LJ Vineyard</strong><span>Event venue and farm-to-table restaurant cooking from its own gardens.</span><em>1551 Hwy 39, Hunt</em><svg><use href="#i-out"/></svg></a>
+          <a class="place" href="https://thehuntstore.com" target="_blank" rel="noopener"><strong>The Hunt Store</strong><span>Caf&eacute;, grocery and wine, beer &amp; spirits, all in one Hill Country stop.</span><em>1634 Hwy 39, Hunt</em><svg><use href="#i-out"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="sec reviews" id="reviews">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">From our guests</span>
+        <h2>What guests say</h2>
+      </div>
+      <div class="quotes">
+        <figure class="quote">
+          <blockquote>Shannon was a wonderful host! Our previous reservation with another host had been canceled due to overbooking. We were left scrambling at the last minute, and we landed in the perfect spot. Comfortable beds, fluffy towels, great deck! Our boys loved fishing in the river.</blockquote>
+          <footer><strong>Ann</strong><span>The River House &middot; March 2026</span></footer>
+        </figure>
+        <figure class="quote">
+          <blockquote>Shannon was a great host and we enjoyed our stay at her beautiful guest house. It is completely separate from the main house, spacious and comfortable. The location is extremely safe and quiet. Would definitely stay here again.</blockquote>
+          <footer><strong>Judit</strong><span>Guest Kitchenette &middot; October 2023</span></footer>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOOD TO KNOW -->
+  <section class="sec" id="know">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Before you arrive</span>
+        <h2>Good to know</h2>
+      </div>
+      <div class="know">
+        <div><h3>Check-in</h3><b>3:00 PM</b><p>Self check-in with a keypad code that works for your stay.</p></div>
+        <div><h3>Check-out</h3><b>11:00 AM</b><p>Our cleaning crew takes care of the rest.</p></div>
+        <div><h3>Quiet hours</h3><b>After 10 PM</b><p>Only registered guests on the property after 10:00 PM Central.</p></div>
+        <div><h3>No smoking</h3><p>No smoking or vaping indoors. A $500 fee applies.</p></div>
+        <div><h3>No pets, no parties</h3><p>Daytime visitors are welcome until 10:00 PM.</p></div>
+        <div><h3>Septic system</h3><p>Please flush only the toilet paper provided.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot" id="contact">
+  <div class="foot-bg" aria-hidden="true"></div>
+  <div class="foot-word" aria-hidden="true">39 Wishes</div>
+  <div class="wrap foot-inner">
+    <div class="foot-top">
+      <div class="glass">
+        <div class="lbl-head">Message us</div>
+        <p class="glass-note">Have a question before you book? Send us a message through Airbnb or Booking.com and we&rsquo;ll get right back to you.</p>
+        <div class="msg-row">
+          <div class="lbl">The River House</div>
+          <div class="msg-links">
+            <a class="btn btn-ghost" href="https://airbnb.com/h/39wishes-theriverhouse" target="_blank" rel="noopener">Airbnb <svg><use href="#i-out"/></svg></a>
+            <a class="btn btn-ghost" href="https://www.booking.com/hotel/us/39-wishes-on-the-guadalupe-river.html" target="_blank" rel="noopener">Booking.com <svg><use href="#i-out"/></svg></a>
+          </div>
+        </div>
+        <div class="msg-row">
+          <div class="lbl">Guest Kitchenette</div>
+          <div class="msg-links">
+            <a class="btn btn-ghost" href="https://airbnb.com/h/39wishes-guest-kitchenette" target="_blank" rel="noopener">Airbnb <svg><use href="#i-out"/></svg></a>
+            <a class="btn btn-ghost" href="https://www.booking.com/hotel/us/39-wishes-guest-kitchenette-on-the-guadalupe-river.html" target="_blank" rel="noopener">Booking.com <svg><use href="#i-out"/></svg></a>
+          </div>
+        </div>
+        <a class="btn btn-copper" href="#stays">Book your stay <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="foot-cta">
+        <span class="eyebrow" style="color:var(--gold)">Come back and see us</span>
+        <h2>Your spot on the river is waiting</h2>
+        <p>Questions about dates, groups or the river? Message us through Airbnb or Booking.com. We&rsquo;re happy to help you plan.</p>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <span>&copy; <span id="yr">2026</span> 39 Wishes Vacation Rentals &middot; Est. 2019</span>
+      <nav aria-label="Footer">
+        <a href="#river-house">The River House</a>
+        <a href="#kitchenette">Guest Kitchenette</a>
+        <a href="#river">On the River</a>
+        <a href="#nearby">Nearby</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <img id="lbImg" alt="">
+  <button class="x" id="lbX" aria-label="Close"><svg><use href="#i-x"/></svg></button>
+  <button class="prev" id="lbPrev" aria-label="Previous photo"><svg><use href="#i-left"/></svg></button>
+  <button class="next" id="lbNext" aria-label="Next photo"><svg><use href="#i-right"/></svg></button>
+  <div class="cap" id="lbCap"></div>
+</div>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'), links=document.getElementById('navLinks');
+  btn.addEventListener('click',function(){var o=links.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+  links.addEventListener('click',function(e){if(e.target.closest('a')){links.classList.remove('open');btn.setAttribute('aria-expanded','false')}});
+
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  document.querySelectorAll('.copy-btn').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.getAttribute('data-copy'), done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1600)};
+      try{navigator.clipboard.writeText(t).then(done,function(){sel(b)})}catch(e){sel(b)}
+    });
+  });
+  function sel(b){var a=b.previousElementSibling;var r=document.createRange();r.selectNodeContents(a);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+
+  var lb=document.getElementById('lb'), img=document.getElementById('lbImg'), cap=document.getElementById('lbCap'), list=[], i=0, name='';
+  function show(){img.src=list[i].src;img.alt=list[i].alt;cap.textContent=name+' · '+(i+1)+' of '+list.length}
+  document.querySelectorAll('[data-gallery]').forEach(function(g){
+    var imgs=[].slice.call(g.querySelectorAll('img'));
+    imgs.forEach(function(im,idx){im.parentNode.setAttribute('aria-label','View photo: '+im.alt);im.parentNode.addEventListener('click',function(){list=imgs;i=idx;name=g.getAttribute('data-gallery');show();lb.hidden=false;document.getElementById('lbX').focus()})});
+  });
+  function close(){lb.hidden=true}
+  document.getElementById('lbX').onclick=close;
+  document.getElementById('lbPrev').onclick=function(){i=(i-1+list.length)%list.length;show()};
+  document.getElementById('lbNext').onclick=function(){i=(i+1)%list.length;show()};
+  lb.addEventListener('click',function(e){if(e.target===lb)close()});
+  document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')document.getElementById('lbPrev').click();if(e.key==='ArrowRight')document.getElementById('lbNext').click()});
+})();
+</script>
+
+</body>
+</html>
